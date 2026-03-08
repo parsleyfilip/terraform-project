@@ -1,0 +1,9 @@
+# Negeer de lokale Terraform map
+**/.terraform/
+
+# Negeer de state (sinds hier na de apply ook gewoon mn variabeles in zitten)
+**/*.tfstate
+**/*.tfstate.*
+
+# Negeer variabelen met de geheimen  
+**/*.tfvars
