@@ -1,9 +1,22 @@
-# Negeer de lokale Terraform map
+# Negeer de lokale Terraform map (providers en modules cache)
 **/.terraform/
 
-# Negeer de state (sinds hier na de apply ook gewoon mn variabeles in zitten)
+# Negeer de state bestanden (bevatten vaak geheimen van de infra)
 **/*.tfstate
 **/*.tfstate.*
 
-# Negeer variabelen met de geheimen  
+# Negeer variabelen bestanden (hier staan vaak je echte wachtwoorden/keys in)
 **/*.tfvars
+**/*.tfvars.json
+
+# Negeer tijdelijke plan bestanden
+*.tfplan
+
+# Negeer Terraform crash logs
+*.log
+
+# Negeer lokale override bestanden
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
