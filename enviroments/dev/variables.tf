@@ -10,5 +10,5 @@ variable "resource_group_name" {
 
 variable "storage_name" {
     type = string
-    description = "Naam voor de storage account "
+    description = "Naam van de storage account"
 }
